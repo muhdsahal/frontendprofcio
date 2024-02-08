@@ -1,0 +1,41 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+   overflow-x: hidden; 
+}
+
+:root {
+  --gradient-shadow-two: linear-gradient(300deg, #68d391, #3dd073, #3458db,rgba(60, 61, 60, 0.525),rgb(211, 229, 45),#68d391, #35b26f, #193c95);
+  /* --gradient-shadow-two: linear-gradient(300deg, #6b9e66, #bd5d5d, #597dcb); */
+}
+
+@keyframes slideBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.contact-highlight {
+  background-image: var(--gradient-shadow-two);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 400% 100%; /* Adjusted background size */
+  /* animation: slideBackground 15s linear infinite; */
+}
+
+/* .react-calendar .month-container .day .day-content.booked-date {
+  border: 2px solid red;
+}
+
+.react-calendar .month-container .day .day-content.absent-date {
+  border: 2px solid blue;
+} */
