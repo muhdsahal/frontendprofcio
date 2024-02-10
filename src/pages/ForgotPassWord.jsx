@@ -32,6 +32,10 @@ function ForgotPassword() {
       setMessage(error.response.data.detail);
     }
   };
+  const buttonStyle = {
+    backgroundColor: 'lightseagreen',
+    color: 'white', // Optionally, set text color
+  };
   
   
   return (
@@ -59,10 +63,10 @@ function ForgotPassword() {
         </CardBody>
         <CardFooter className="pt-0">
         <Button
-          variant="White"
+          
           fullWidth
           onClick={ handleForgotPassword }
-          className="bg-rose-500 text-gray-700"
+          style={buttonStyle}
         >
            "Send Reset Link
         </Button>

@@ -76,6 +76,11 @@ const validatePassword = (password) => {
     console.log("Data from the last position:", data2);
   }, []); // Run this effect only once when the component mounts
 
+
+  const buttonStyle = {
+    backgroundColor: 'lightseagreen',
+    color: 'white', // Optionally, set text color
+  };
   return (
     <>
       <div className="flex items-center justify-center h-screen">
@@ -107,10 +112,10 @@ const validatePassword = (password) => {
           </CardBody>
           <CardFooter className="pt-0">
             <Button
-              variant="White"
+             
               fullWidth
               onClick={handlePasswordResetConfirmation}
-              className="bg-rose-500 text-gray-700"
+              style={buttonStyle}
             >
               Submit
             </Button>
